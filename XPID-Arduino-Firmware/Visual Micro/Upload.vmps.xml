@@ -1,0 +1,52 @@
+<VisualMicro>
+  <Program Name="XPID" Ext=".ino" Location="C:\Users\SirNoName\Documents\Arduino\XPID">
+    <Compile CompilerErrors="0" ConfigurationName="Debug" StopOnError="False" OptimiseLibs="True" OptimiseCore="True" BuildPath="C:\Users\SirNoName\AppData\Local\VMicro\Arduino\Builds\XPID\uno" IncludeDebug="0" IncludesDebug="0" SketchName="XPID" IsCompiled="1" />
+    <Platform Name="Arduino">
+      <Board Name="uno" Description="Arduino Uno" CoreFolder="C:\Program Files\arduino\hardware\arduino\cores\arduino" VariantFullPath="C:\Program Files\arduino\hardware\arduino\variants\standard" bootloader.extended_fuses="0x05" bootloader.file="optiboot_atmega328.hex" bootloader.high_fuses="0xde" bootloader.lock_bits="0x0F" bootloader.low_fuses="0xff" bootloader.path="optiboot" bootloader.unlock_bits="0x3F" build.core="arduino" build.f_cpu="16000000L" build.mcu="atmega328p" build.variant="standard" build.variant.vmresolved="C:\Program Files\arduino\hardware\arduino\variants\standard" name="Arduino Uno" upload.maximum_size="32256" upload.protocol="arduino" upload.speed="115200" />
+    </Platform>
+    <VCCodeModel>
+      <VCCodeMacros>
+        <VCCodeMacro Name="ARDUINO" Value="103" />
+        <VCCodeMacro Name="PID_v1_h" Value="" />
+        <VCCodeMacro Name="__AVR_ATmega328P__" Value="" />
+        <VCCodeMacro Name="LIBRARY_VERSION" Value="1.0.0" />
+        <VCCodeMacro Name="F_CPU" Value="16000000L" />
+        <VCCodeMacro Name="__AVR__" Value="" />
+        <VCCodeMacro Name="__cplusplus" Value="" />
+        <VCCodeMacro Name="__attribute__" Value="" />
+        <VCCodeMacro Name="__inline__" Value="" />
+        <VCCodeMacro Name="__asm__" Value="" />
+        <VCCodeMacro Name="__extension__" Value="" />
+        <VCCodeMacro Name="__ATTR_PURE__" Value="" />
+        <VCCodeMacro Name="__ATTR_CONST__" Value="" />
+        <VCCodeMacro Name="AUTOMATIC" Value="1" />
+        <VCCodeMacro Name="__inline__" Value="" />
+        <VCCodeMacro Name="MANUAL" Value="0" />
+        <VCCodeMacro Name="__asm__" Value="" />
+        <VCCodeMacro Name="DIRECT" Value="0" />
+        <VCCodeMacro Name="__volatile__" Value="" />
+        <VCCodeMacro Name="REVERSE" Value="1" />
+        <VCCodeMacro Name="__builtin_va_list" Value="" />
+        <VCCodeMacro Name="__builtin_va_start" Value="" />
+        <VCCodeMacro Name="__builtin_va_end" Value="" />
+        <VCCodeMacro Name="__DOXYGEN__" Value="" />
+        <VCCodeMacro Name="prog_void" Value="" />
+        <VCCodeMacro Name="PGM_VOID_P" Value="int" />
+        <VCCodeMacro Name="NOINLINE" Value="__attribute__((noinline))" />
+        <VCCodeMacro Name="FASTADC" Value="1" />
+        <VCCodeMacro Name="FASTLOOP" Value="1" />
+        <VCCodeMacro Name="cbi" Value="(_SFR_BYTE(sfr) &amp;= ~_BV(bit))" />
+        <VCCodeMacro Name="sbi" Value="(_SFR_BYTE(sfr) |= _BV(bit))" />
+        <VCCodeMacro Name="LOWBYTE" Value="((unsigned char) (v))" />
+        <VCCodeMacro Name="HIGHBYTE" Value="((unsigned char) (((unsigned int) (v)) &gt;&gt; 8))" />
+        <VCCodeMacro Name="BYTELOW" Value="(*(((unsigned char *) (&amp;v) + 1)))" />
+        <VCCodeMacro Name="BYTEHIGH" Value="(*((unsigned char *) (&amp;v)))" />
+        <VCCodeMacro Name="GUARD_MOTOR_1_GAIN" Value="100.0" />
+        <VCCodeMacro Name="GUARD_MOTOR_2_GAIN" Value="100.0" />
+      </VCCodeMacros>
+      <VCCodeVariables>
+        <VCCodeVariable Name="firmaware_version_mayor" />
+      </VCCodeVariables>
+    </VCCodeModel>
+  </Program>
+</VisualMicro>

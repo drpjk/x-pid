@@ -1,0 +1,214 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Deutschland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource1.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040704b0"
+        BEGIN
+            VALUE "Comments", "Interface Plugin for Arduino Uno XPID jrk interfaces"
+            VALUE "FileDescription", "Interface Plugin for Arduino Uno XPID jrk interfaces"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Interface Plugin for Arduino Uno XPID interfaces"
+            VALUE "LegalCopyright", "Copyright © 2012 Martin Wiedenbauer"
+            VALUE "OriginalFilename", "ArduinoXPID.dll"
+            VALUE "ProductName", "Converter Interfaceplug"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x407, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SETTINGS DIALOGEX 0, 0, 589, 354
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+CAPTION "Arduino Uno with XPID firmware setup dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "0",IDC_DEADZONE1,97,199,10,8
+    CONTROL         "",IDC_DEADZONE1_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,110,197,9,13
+    LTEXT           "0",IDC_DEADZONE2,97,269,9,8
+    CONTROL         "",IDC_DEADZONE2_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,110,267,9,13
+    COMBOBOX        IDC_XPID_COMBO,7,84,339,240,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "connected on comport:",IDC_STATIC,7,114,75,8
+    LTEXT           "",IDC_COMPORT,93,114,250,8
+    LTEXT           "Device path:",IDC_STATIC,7,134,42,8
+    LTEXT           "",IDC_DEVICEPATH,59,134,284,8
+    LTEXT           "Comport name:",IDC_STATIC,7,124,50,8
+    LTEXT           "",IDC_COMPORTNAME,72,124,271,8
+    LTEXT           "Select detected Arduino Uno with XPID firmware:",IDC_STATIC,7,74,158,8
+    CONTROL         "Rename:",IDC_RENAMEPORT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,100,45,10
+    PUSHBUTTON      "Set name",IDC_SETNAME_BUTTON,297,98,50,12
+    PUSHBUTTON      "Close dialog",IDC_CLOSE_BUTTON,7,333,575,14
+    COMBOBOX        IDC_RENAME_COMBO,73,98,212,258,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Enable automated power off if there is no new position data for",IDC_TIMEOUT_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,315,219,10
+    EDITTEXT        IDC_TIMEOUT_EDIT,236,315,20,12,ES_AUTOHSCROLL
+    LTEXT           "second(s)",IDC_STATIC,258,317,32,8
+    LTEXT           "Current PID counts per second:",IDC_STATIC,7,144,102,8
+    LTEXT           "0",IDC_PID_COUNTER,113,144,63,8
+    LTEXT           "Current analogue value of feedback 1:",IDC_STATIC,19,174,125,8
+    LTEXT           "Current analogue value of feedback 2:",IDC_STATIC,19,240,125,8
+    LTEXT           "Minimum Value set to:",IDC_STATIC,19,187,70,8
+    LTEXT           "Maximum value set to:",IDC_STATIC,184,187,73,8
+    PUSHBUTTON      "set",IDC_SET_BUTTON_MINIMUM_1,128,185,22,12
+    PUSHBUTTON      "set",IDC_SET_BUTTON_MAXIMUM_1,296,185,22,12
+    LTEXT           "Minimum Value set to:",IDC_STATIC,19,254,70,8
+    LTEXT           "Maximum value set to:",IDC_STATIC,184,254,73,8
+    PUSHBUTTON      "set",IDC_SET_BUTTON_MINIMUM_2,128,252,22,12
+    PUSHBUTTON      "set",IDC_SET_BUTTON_MAXIMUM_2,296,252,22,12
+    LTEXT           "Feedback 1 deadzone:",IDC_STATIC,19,199,74,8
+    LTEXT           "Feedback 2 deadzone:",IDC_STATIC,19,269,74,8
+    LTEXT           "0",IDC_FEEDBACK1,150,174,32,8
+    LTEXT           "0",IDC_FEEDBACK2,150,240,32,8
+    LTEXT           "Scaled feedback 1:",IDC_STATIC,202,174,62,8
+    LTEXT           "Scaled feedback 2:",IDC_STATIC,202,240,62,8
+    LTEXT           "0 %",IDC_SCALED_FEEDBACK1,272,174,32,8
+    LTEXT           "0 %",IDC_SCALED_FEEDBACK2,272,240,32,8
+    LTEXT           "0",IDC_MINIMUM_1,93,187,32,8
+    LTEXT           "0",IDC_MAXIMUM_1,263,187,32,8
+    LTEXT           "0",IDC_MINIMUM_2,93,254,32,8
+    LTEXT           "0",IDC_MAXIMUM_2,261,254,32,8
+    GROUPBOX        "Feedback pot 1 adjustment (will reduce the position resulution, use mechanic solutions instead)",IDC_STATIC,7,158,320,57
+    GROUPBOX        "Feedback pot 2 adjustment (will reduce the position resulution, use mechanic solutions instead)",IDC_STATIC,7,225,320,57
+    GROUPBOX        "PID Motor 1 control setup",IDC_STATIC,332,158,250,57
+    GROUPBOX        "PID Motor 2 control setup",IDC_STATIC,332,225,250,57
+    LTEXT           "0",IDC_P1_TEXT,414,173,16,8
+    CONTROL         "",IDC_P1_SPIN,"msctls_updown32",UDS_ARROWKEYS,432,171,11,13
+    LTEXT           "Proportional value:",IDC_STATIC,341,173,62,8
+    LTEXT           "0",IDC_I1_TEXT,414,191,16,8
+    CONTROL         "",IDC_I1_SPIN,"msctls_updown32",UDS_ARROWKEYS,432,189,11,13
+    LTEXT           "Integral value:",IDC_STATIC,342,191,48,8
+    LTEXT           "0",IDC_D1_TEXT,544,173,16,8
+    CONTROL         "",IDC_D1_SPIN,"msctls_updown32",UDS_ARROWKEYS,563,171,11,13
+    LTEXT           "Derivative value:",IDC_STATIC,472,173,56,8
+    LTEXT           "0",IDC_P2_TEXT,414,240,16,8
+    CONTROL         "",IDC_P2_SPIN,"msctls_updown32",UDS_ARROWKEYS,432,238,11,13
+    LTEXT           "Proportional value:",IDC_STATIC,342,240,62,8
+    LTEXT           "0",IDC_I2_TEXT,414,257,16,8
+    CONTROL         "",IDC_I2_SPIN,"msctls_updown32",UDS_ARROWKEYS,432,256,11,13
+    LTEXT           "Integral value:",IDC_STATIC,342,257,48,8
+    LTEXT           "0",IDC_D2_TEXT,544,240,16,8
+    CONTROL         "",IDC_D2_SPIN,"msctls_updown32",UDS_ARROWKEYS,564,238,11,13
+    LTEXT           "Derivative value:",IDC_STATIC,472,240,56,8
+    PUSHBUTTON      "reset feedback 1",IDC_RESET_1,237,200,81,12
+    PUSHBUTTON      "reset feedback 2",IDC_RESET_2,237,267,81,12
+    LTEXT           "",IDC_DEBUG_BYTE,440,285,142,8,NOT WS_VISIBLE
+    LTEXT           "",IDC_DEBUG_INTEGER,440,297,142,8,NOT WS_VISIBLE
+    LTEXT           "",IDC_DEBUG_DOUBLE,440,309,142,8,NOT WS_VISIBLE
+    CONTROL         "Show debug values",IDC_ENABLE_DEBUG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,504,320,78,10
+    CONTROL         109,IDC_ANALYZER,"Static",SS_BITMAP | SS_REALSIZEIMAGE,7,6,333,62
+    CONTROL         "Enable graph",IDC_GRAPH_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,288,71,58,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 582
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 347
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ANALYZER            BITMAP                  "res\\analyzer.bmp"
+#endif    // Deutsch (Deutschland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
